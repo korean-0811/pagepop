@@ -1,126 +1,53 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>코인 수수료 페이백</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif; }
-    body { background-color: #001f4e; color: white; line-height: 1.6; }
-
-    .hero { text-align: center; background: #001944; padding: 20px; }
-    .hero img.main-banner { max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.5); }
-
-    .benefit {
-      text-align: center;
-      background: #002e7a;
-      padding: 40px 20px;
-    }
-    .benefit h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-    .benefit span {
-      color: #ffd700;
-      font-size: 2.4rem;
-      font-weight: 900;
+    body {
+      margin: 0;
+      font-family: 'Pretendard', sans-serif;
+      background-color: #0b1d63;
+      color: #ffffff;
     }
 
-    .highlight {
-      background-color: #003b99;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    .highlight h3 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-
-    .features {
-      background: #0044aa;
-      padding: 50px 20px;
-      text-align: center;
-    }
-    .features h3 {
-      font-size: 1.6rem;
-      margin-bottom: 30px;
-    }
-    .grid {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-    .card {
-      background: #0051cc;
-      border-radius: 12px;
-      padding: 20px;
-      width: 200px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card img {
+    .section {
       width: 100%;
-      height: auto;
-      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .banner {
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+      display: block;
     }
 
     footer {
-      background: #000d2b;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
+      background: #09184f;
+      padding: 20px 10px;
+      font-size: 14px;
       color: #ccc;
     }
-    footer p {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #fff;
+
+    @media screen and (max-width: 500px) {
+      .banner {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="hero">
-    <img src="images/banner.png" alt="코인 수수료 페이백 배너" class="main-banner">
-  </div>
-
-  <section class="benefit">
-    <h2>1인 평균 환급액 <span>3,000,000</span>원</h2>
-    <p>최대 환급 수수료 <span>60%</span></p>
-  </section>
-
-  <section class="highlight">
-    <h3>코인 수수료 페이백</h3>
-    <p>나만 놓치고 있는 수수료 환급, 이제 돌려받으세요!</p>
-    <p>수수료 페이백으로 수익률 2배</p>
-  </section>
-
-  <section class="features">
-    <h3>COIN PAY를 선택하셔야 하는 이유</h3>
-    <div class="grid">
-      <div class="card">
-        <img src="https://via.placeholder.com/200x120?text=자동+페이백" alt="자동 페이백">
-        <p>매매 수수료<br>자동 페이백</p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/200x120?text=전문가+혜택" alt="전문가 혜택">
-        <p>코인 전문가의<br>혜택 전성기</p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/200x120?text=실시간+뉴스" alt="뉴스 실시간">
-        <p>실시간 뉴스<br>알림 수신</p>
-      </div>
-    </div>
+  <!-- 배너 이미지 -->
+  <section class="section">
+    <img class="banner" src="https://raw.githubusercontent.com/korean-0811/pagepop/main/images/banner.png" alt="코인 수수료 페이백 배너">
   </section>
 
   <footer>
-    <p>고객님! 좋은 기회 놓치지 마세요</p>
-    <small>무료 상담 및 문의는 홈페이지에서 신청 가능합니다</small>
+    © 2025 Coin Pay Refund | 모든 권리 보유<br />
+    문의: support@coinpay.com
   </footer>
 </body>
 </html>
-<img src="https://github.com/본인계정/레포명/raw/main/images/banner.png" ... >
