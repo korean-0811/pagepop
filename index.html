@@ -1,130 +1,125 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>최저가애플샵 - 맞춤 링크페이지 제작</title>
+  <meta charset="UTF-8">
+  <title>코인 수수료 페이백</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Pretendard', sans-serif;
-      background-color: #fffaf4;
-      color: #2e2e2e;
-    }
-    header {
-      background-color: #fff;
-      padding: 2rem 1rem;
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif; }
+    body { background-color: #001f4e; color: white; line-height: 1.6; }
+
+    .hero { text-align: center; background: #001944; padding: 20px; }
+    .hero img.main-banner { max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.5); }
+
+    .benefit {
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      background: #002e7a;
+      padding: 40px 20px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #111;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-      color: #666;
-    }
-    .buttons {
-      margin-top: 1rem;
-    }
-    .buttons a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.7rem 1.5rem;
-      background-color: #111;
-      color: #fff;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
-    .buttons a:hover {
-      background-color: #3b3b3b;
-    }
-    .hero-image {
-      width: 100%;
-      max-width: 800px;
-      margin: 2rem auto;
-      border-radius: 1rem;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    }
-    .hero-image img {
-      width: 100%;
-      display: block;
-    }
-    .section {
-      padding: 3rem 1.5rem;
-      text-align: center;
-    }
-    .section h2 {
+    .benefit h2 {
       font-size: 2rem;
-      margin-bottom: 1rem;
+      margin-bottom: 10px;
     }
-    .section p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.6;
+    .benefit span {
+      color: #ffd700;
+      font-size: 2.4rem;
+      font-weight: 900;
     }
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      padding: 2rem 1.5rem;
-    }
-    .portfolio-grid img {
-      width: 100%;
-      border-radius: 1rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    }
-    footer {
-      background: #111;
-      color: #fff;
+
+    .highlight {
+      background-color: #003b99;
+      padding: 30px 20px;
       text-align: center;
-      padding: 2rem;
+    }
+    .highlight h3 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .features {
+      background: #0044aa;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .features h3 {
+      font-size: 1.6rem;
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .card {
+      background: #0051cc;
+      border-radius: 12px;
+      padding: 20px;
+      width: 200px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #000d2b;
+      text-align: center;
+      padding: 20px;
       font-size: 0.9rem;
+      color: #ccc;
+    }
+    footer p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>최저가애플샵</h1>
-    <p>단 하나뿐인 당신만의 링크페이지, 정성껏 만들어드립니다.</p>
-    <div class="buttons">
-      <a href="https://t.me/Gtanchl" target="_blank">텔레그램</a>
-      <a href="https://www.instagram.com/user7377747525" target="_blank">인스타그램</a>
-      <a href="https://discord.com/users/koreanshop_apple" target="_blank">디스코드</a>
-      <a href="mailto:snow1pass@proton.me">이메일 문의</a>
-    </div>
-  </header>
-
-  <div class="hero-image">
-    <img src="https://raw.githubusercontent.com/korean-0811/pagepop/main/images/promo1.png" alt="홍보 배너" />
+  <div class="hero">
+    <img src="images/banner.png" alt="코인 수수료 페이백 배너" class="main-banner">
   </div>
 
-  <section class="section">
-    <h2>링크 하나로 브랜드를 완성하세요</h2>
-    <p>정해진 템플릿 없이, 직접 정성껏 디자인하는 100% 수작업 링크페이지. 브랜드 정체성과 고객 니즈를 반영한 유일무이한 페이지를 만들어드립니다. 가격은 최소 15만원부터, 크몽 시세 기준 합리적인 비용으로 고퀄리티 작업을 보장합니다.</p>
+  <section class="benefit">
+    <h2>1인 평균 환급액 <span>3,000,000</span>원</h2>
+    <p>최대 환급 수수료 <span>60%</span></p>
   </section>
 
-  <section class="section">
-    <h2>포트폴리오 미리보기</h2>
-    <div class="portfolio-grid">
-      <img src="https://raw.githubusercontent.com/korean-0811/pagepop/main/images/portfolio1.png" alt="포트폴리오1" />
-      <img src="https://raw.githubusercontent.com/korean-0811/pagepop/main/images/portfolio2.png" alt="포트폴리오2" />
-      <img src="https://raw.githubusercontent.com/korean-0811/pagepop/main/images/portfolio3.png" alt="포트폴리오3" />
-      <img src="https://raw.githubusercontent.com/korean-0811/pagepop/main/images/portfolio4.png" alt="포트폴리오4" />
-      <img src="https://raw.githubusercontent.com/korean-0811/pagepop/main/images/portfolio5.png" alt="포트폴리오5" />
-      <img src="https://raw.githubusercontent.com/korean-0811/pagepop/main/images/portfolio6.png" alt="포트폴리오6" />
+  <section class="highlight">
+    <h3>코인 수수료 페이백</h3>
+    <p>나만 놓치고 있는 수수료 환급, 이제 돌려받으세요!</p>
+    <p>수수료 페이백으로 수익률 2배</p>
+  </section>
+
+  <section class="features">
+    <h3>COIN PAY를 선택하셔야 하는 이유</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x120?text=자동+페이백" alt="자동 페이백">
+        <p>매매 수수료<br>자동 페이백</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x120?text=전문가+혜택" alt="전문가 혜택">
+        <p>코인 전문가의<br>혜택 전성기</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x120?text=실시간+뉴스" alt="뉴스 실시간">
+        <p>실시간 뉴스<br>알림 수신</p>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 최저가애플샵 | 텔레그램: @Gtanchl | 이메일: snow1pass@proton.me</p>
+    <p>고객님! 좋은 기회 놓치지 마세요</p>
+    <small>무료 상담 및 문의는 홈페이지에서 신청 가능합니다</small>
   </footer>
 </body>
 </html>
